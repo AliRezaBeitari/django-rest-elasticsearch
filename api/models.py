@@ -6,3 +6,6 @@ class Product(models.Model):
     summary = models.CharField(max_length=255)
     description = models.TextField()
     created_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
