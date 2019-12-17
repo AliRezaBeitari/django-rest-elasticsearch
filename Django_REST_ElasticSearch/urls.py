@@ -21,7 +21,7 @@ from rest_framework import routers
 from api import views
 
 router = routers.DefaultRouter()
-router.register(r'products', views.ProductViewSet, basename='product')
+router.register(r'products', views.ProductDocumentViewSet, basename='product')
 
 urlpatterns = [
     path('', include(router.urls)),
