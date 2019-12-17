@@ -48,9 +48,8 @@ class ProductDocumentViewSet(BaseDocumentViewSet):
 
     # Define ordering fields
     ordering_fields = {
-        'id': 'id',
         'title': 'title.raw',
     }
 
     # Specify default ordering
-    ordering = ('id', 'title',)
+    ordering = ()
